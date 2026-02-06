@@ -141,8 +141,8 @@ parse_config:
     GT: ">"
     LBKT: {tap: "[", shifted: "{"}
     LEFT_BRACKET: {tap: "[", shifted: "{"}
-    RBKT: {tap: "]", shifted: "}"
-    RIGHT_BRACKET: {tap: "]", shifted: "}"
+    RBKT: {tap: "]", shifted: "}"}
+    RIGHT_BRACKET: {tap: "]", shifted: "}"}
     LBRC: "{"
     LEFT_BRACE: "{"
     RBRC: "}"
