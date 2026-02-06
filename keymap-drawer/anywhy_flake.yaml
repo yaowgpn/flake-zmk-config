@@ -1,0 +1,130 @@
+layout: {zmk_keyboard: anywhy_flake}
+layers:
+  base: ['$$mdi:keyboard-esc$$', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', MINUS, '$$mdi:keyboard-return$$', Q, W, E, R, T, Y, U, I, O, P, BSPC, '$$mdi:keyboard-tab$$',
+    A, S, D, F, G, H, J, K, L, SEMI, APOS, LBKT, Z, X, C, V, B, N, M, COMMA, DOT, FSLH, RBKT, LGUI, '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-control$$',
+    '$$mdi:keyboard-space$$', num, fn, LSHFT, LGUI, '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-control$$']
+  num:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$mdi:keyboard-esc$$
+  - $$mdi:backspace$$
+  - $$mdi:keyboard-tab$$
+  - $$mdi:keyboard-return$$
+  - DEL
+  - GRAVE
+  - '7'
+  - '8'
+  - '9'
+  - MINUS
+  - ''
+  - ''
+  - LGUI
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - LSHFT
+  - LBKT
+  - EQUAL
+  - '4'
+  - '5'
+  - '6'
+  - '0'
+  - ''
+  - ''
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - RBKT
+  - SQT
+  - '1'
+  - '2'
+  - '3'
+  - BSLH
+  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  fn:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F12
+  - F7
+  - F8
+  - F9
+  - '&soft_off'
+  - {t: BT, h: '2', s: '&bt_clr_2'}
+  - $$mdi:volume-off$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - BRI UP
+  - ''
+  - ''
+  - F10
+  - F4
+  - F5
+  - F6
+  - CAPS
+  - {t: BT, h: '1', s: '&bt_clr_1'}
+  - RSHFT
+  - RCTRL
+  - RALT
+  - RGUI
+  - ''
+  - ''
+  - F11
+  - F1
+  - F2
+  - F3
+  - '&studio_unlock'
+  - {t: BT, h: '0', s: '&bt_clr_0'}
+  - PP
+  - PREV
+  - NEXT
+  - BRI DN
+  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [42, 30]
+  k: {t: BT, h: '3', s: '&bt_clr_3'}
+  l: [fn]
+- p: [30, 18]
+  k: {t: BT, h: '4', s: '&bt_clr_4'}
+  l: [fn]
