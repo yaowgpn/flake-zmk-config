@@ -80,7 +80,7 @@ parse_config:
     "&bootloader": {tap: $$mdi:progress-download$$}
     "&studio_unlock": {tap: "Studio"}
 
-    # bluetooth
+    # Bluetooth
     "&bt BT_SEL 0": {tap: "", hold: 1, shifted: $$mdi:bluetooth-connect$$}
     "&bt BT_SEL 1": {tap: "", hold: 2, shifted: $$mdi:bluetooth-connect$$}
     "&bt BT_SEL 2": {tap: "", hold: 3, shifted: $$mdi:bluetooth-connect$$}
@@ -91,43 +91,70 @@ parse_config:
     "&bt BT_NXT": {tap: $$mdi:bluetooth-transfer$$ +, hold: $$mdi:arrow-down-bold$$}
     "&bt BT_PRV": {tap: $$mdi:bluetooth-transfer$$ -, hold: $$mdi:arrow-up-bold$$}
 
-  # === key code mapping ===
+  # === Keycode Mappings (Updated) ===
   zmk_keycode_map:
-    # Modifier key icons
+    # Symbols & Punctuation
     EXCL: "!"
+    EXCLAMATION: "!"
     AT: "@"
+    AT_SIGN: "@"
     HASH: "#"
+    POUND: "#"
     DLLR: $
+    DOLLAR: $
     PRCNT: "%"
+    PERCENT: "%"
     CARET: ^
     AMPS: "&"
+    AMPERSAND: "&"
     STAR: "*"
+    ASTERISK: "*"
     LPAR: (
+    LEFT_PAREN: (
     RPAR: )
+    RIGHT_PAREN: )
     EQUAL: {tap: "=", shifted: "+"}
     PLUS: +
     MINUS: {tap: "-", shifted: "_"}
     UNDER: _
+    UNDERSCORE: _
     FSLH: {tap: "/", shifted: "?"}
+    SLASH: {tap: "/", shifted: "?"}
     QMARK: "?"
-    BSLH: {tap: '\', shifted: "|"}
+    QUESTION: "?"
+    # Double-escaped backslash for YAML safety
+    BSLH: {tap: "\\", shifted: "|"}
+    BACKSLASH: {tap: "\\", shifted: "|"}
     PIPE: "|"
     SEMI: {tap: ";", shifted: ":"}
+    SEMICOLON: {tap: ";", shifted: ":"}
     COLON: ":"
+    # Quotes
     SQT: {tap: "'", shifted: '"'}
+    APOS: {tap: "'", shifted: '"'}
+    SINGLE_QUOTE: {tap: "'", shifted: '"'}
     DQT: '"'
+    DOUBLE_QUOTE: '"'
+
+    # Brackets
     LT: <
     GT: ">"
     LBKT: {tap: "[", shifted: "{"}
-    RBKT: {tap: "]", shifted: "}"}
+    LEFT_BRACKET: {tap: "[", shifted: "{"}
+    RBKT: {tap: "]", shifted: "}"
+    RIGHT_BRACKET: {tap: "]", shifted: "}"
     LBRC: "{"
+    LEFT_BRACE: "{"
     RBRC: "}"
+    RIGHT_BRACE: "}"
+
+    # Misc Punctuation
     GRAVE: {tap: "`", shifted: "~"}
     TILDE: "~"
     COMMA: {tap: ",", shifted: "<"}
     DOT: {tap: ".", shifted: ">"}
 
-    # num
+    # Numbers
     N1: {tap: 1, shifted: "!"}
     N2: {tap: 2, shifted: "@"}
     N3: {tap: 3, shifted: "#"}
@@ -139,16 +166,18 @@ parse_config:
     N9: {tap: 9, shifted: "("}
     N0: {tap: 0, shifted: ")"}
 
-    # modifiers
+    # Modifiers
     LCTRL: $$mdi:apple-keyboard-control$$
     LALT: $$mdi:apple-keyboard-option$$
     LSHIFT: $$mdi:apple-keyboard-shift$$
     LCMD: $$mdi:apple-keyboard-command$$
     LEFT_GUI: $$mdi:apple-keyboard-command$$
+    LGUI: $$mdi:apple-keyboard-command$$
     RCTRL: $$mdi:apple-keyboard-control$$
     RALT: $$mdi:apple-keyboard-option$$
     RSHIFT: $$mdi:apple-keyboard-shift$$
     RCMD: $$mdi:apple-keyboard-command$$
+    RGUI: $$mdi:apple-keyboard-command$$
 
     # Common keys
     ENTER: {tap: $$mdi:keyboard-return$$}
@@ -159,16 +188,26 @@ parse_config:
     BACKSPACE: {tap: $$mdi:backspace$$}
     BSPC: {tap: $$mdi:backspace$$}
     DELETE: {tap: $$mdi:backspace-reverse-outline$$}
-    DEL: $$mdi:backspace-reverse-outline$$
+    DEL: {tap: $$mdi:backspace-reverse-outline$$}
     CAPS: $$mdi:apple-keyboard-caps$$
 
     # Media & Arrows
     C_VOL_UP: $$mdi:volume-high$$
     C_VOL_DN: $$mdi:volume-low$$
     C_MUTE: $$mdi:volume-off$$
+    C_PP: $$mdi:play-pause$$
+    C_PLAY_PAUSE: $$mdi:play-pause$$
+    C_NEXT: $$mdi:skip-next$$
+    C_PREV: $$mdi:skip-previous$$
+    C_BRI_UP: $$mdi:brightness-7$$
+    C_BRI_DN: $$mdi:brightness-5$$
+
+    # Arrows
     UP: $$mdi:arrow-up-bold$$
     DOWN: $$mdi:arrow-down-bold$$
     LEFT: $$mdi:arrow-left-bold$$
     RIGHT: $$mdi:arrow-right-bold$$
     PG_UP: 'PgUp'
     PG_DN: 'PgDn'
+    HOME: 'Home'
+    END: 'End'
