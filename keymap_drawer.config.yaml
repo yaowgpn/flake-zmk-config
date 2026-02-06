@@ -9,13 +9,14 @@ draw_config:
   combo_w: 28.0
   combo_h: 26.0
   arc_radius: 6.0
+  append_colon_to_layer_header: true
 
   # === Styling ===
   svg_extra_style: |
     /* Font settings */
     svg.keymap {
       font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
-      font-size: 12px;
+      font-size: 14px;
       font-weight: bold;
       text-rendering: optimizeLegibility;
     }
@@ -26,9 +27,16 @@ draw_config:
     /* Icon fine-tuning */
     .sym_sub_text.tap { translate: -5px 2px; font-size: 20px; }
     .sym_sub_text.shifted { translate: 10px 13px; font-size: 10px; opacity: 1.0; }
+    .combo.sym_sub_text.tap { translate: -1px 1px; }
+    .combo.sym_sub_text.shifted { translate: 7px 5px; font-size: 10px; opacity: 1.0; }
+
+    /* Toggle switch */
     .toggle.shifted { translate: -10px 12px; }
     .toggle.hold { translate: 13px -23px; }
+
+    /* Tap Dance */
     .tap_dance.tap { translate: -7px 0px; font-size: 12px; }
+    .tap_dance.shifted { translate: 7px 17px; font-size: 12px; opacity: 1.0; }
 
   # === Icon Sources ===
   shrink_wide_legends: 6
@@ -40,6 +48,7 @@ draw_config:
     mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
     mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
+  use_local_cache: true
 
 parse_config:
   mark_alternate_layer_activators: true
@@ -50,9 +59,10 @@ parse_config:
 
   # === Key Mappings (Convert code to pretty icons) ===
   raw_binding_map:
-    "&sys_reset": {tap: $$mdi:backup-restore$$}
-    "&bootloader": {tap: $$mdi:progress-download$$}
-    "&bt BT_CLR": {tap: $$mdi:bluetooth-off$$}
+    "&lt 1 BACKSPACE": {tap: $$mdi:backspace$$, hold: '$$mdi:navigation-variant$$'}
+    "&lt 2 SPACE": {tap: $$mdi:keyboard-space$$, hold: $$mdi:symbol$$}
+    "&lt 3 ENTER": {tap: $$mdi:keyboard-return$$, hold: $$mdi:numeric$$}
+
     "&mkp LCLK": {tap: $$mdi:mouse-left-click-outline$$}
     "&mkp RCLK": {tap: $$mdi:mouse-right-click-outline$$}
     # Mac-style modifier keys
@@ -60,22 +70,99 @@ parse_config:
     "&hm LEFT_ALT S": {tap: 'S', shifted: $$mdi:apple-keyboard-option$$}
     "&hm LEFT_CONTROL D": {tap: 'D', shifted: $$mdi:apple-keyboard-control$$}
     "&hm LEFT_SHIFT F": {tap: 'F', shifted: $$mdi:apple-keyboard-shift$$}
+    "&hm RIGHT_SHIFT J": {tap: 'J', shifted: $$mdi:apple-keyboard-shift$$}
+    "&hm RIGHT_CONTROL K": {tap: 'K', shifted: $$mdi:apple-keyboard-control$$}
+    "&hm RIGHT_ALT L": {tap: 'L', shifted: $$mdi:apple-keyboard-option$$}
+    "&hm RIGHT_GUI SEMI": {tap: ';', shifted: $$mdi:apple-keyboard-command$$}
 
+    # Reset
+    "&sys_reset": {type: bootloader, tap: $$mdi:backup-restore$$}
+    "&bootloader": {tap: $$mdi:progress-download$$}
+    "&studio_unlock": {tap: "Studio"}
+
+    # bluetooth
+    "&bt BT_SEL 0": {tap: "", hold: 1, shifted: $$mdi:bluetooth-connect$$}
+    "&bt BT_SEL 1": {tap: "", hold: 2, shifted: $$mdi:bluetooth-connect$$}
+    "&bt BT_SEL 2": {tap: "", hold: 3, shifted: $$mdi:bluetooth-connect$$}
+    "&bt BT_SEL 3": {tap: "", hold: 4, shifted: $$mdi:bluetooth-connect$$}
+    "&bt BT_SEL 4": {tap: "", hold: 5, shifted: $$mdi:bluetooth-connect$$}
+    "&bt BT_CLR": {tap: $$mdi:bluetooth-off$$}
+    "&bt BT_CLR_ALL": {tap: $$mdi:bluetooth-off$$ ALL}
+    "&bt BT_NXT": {tap: $$mdi:bluetooth-transfer$$ +, hold: $$mdi:arrow-down-bold$$}
+    "&bt BT_PRV": {tap: $$mdi:bluetooth-transfer$$ -, hold: $$mdi:arrow-up-bold$$}
+
+  # === key code mapping ===
   zmk_keycode_map:
     # Modifier key icons
+    EXCL: "!"
+    AT: "@"
+    HASH: "#"
+    DLLR: $
+    PRCNT: "%"
+    CARET: ^
+    AMPS: "&"
+    STAR: "*"
+    LPAR: (
+    RPAR: )
+    EQUAL: {tap: "=", shifted: "+"}
+    PLUS: +
+    MINUS: {tap: "-", shifted: "_"}
+    UNDER: _
+    FSLH: {tap: "/", shifted: "?"}
+    QMARK: "?"
+    BSLH: {tap: '\', shifted: "|"}
+    PIPE: "|"
+    SEMI: {tap: ";", shifted: ":"}
+    COLON: ":"
+    SQT: {tap: "'", shifted: '"'}
+    DQT: '"'
+    LT: <
+    GT: ">"
+    LBKT: {tap: "[", shifted: "{"}
+    RBKT: {tap: "]", shifted: "}"
+    LBRC: "{"
+    RBRC: "}"
+    GRAVE: {tap: "`", shifted: "~"}
+    TILDE: "~"
+    COMMA: {tap: ",", shifted: "<"}
+    DOT: {tap: ".", shifted: ">"}
+
+    # num
+    N1: {tap: 1, shifted: "!"}
+    N2: {tap: 2, shifted: "@"}
+    N3: {tap: 3, shifted: "#"}
+    N4: {tap: 4, shifted: "$"}
+    N5: {tap: 5, shifted: "%"}
+    N6: {tap: 6, shifted: "^"}
+    N7: {tap: 7, shifted: "&"}
+    N8: {tap: 8, shifted: "*"}
+    N9: {tap: 9, shifted: "("}
+    N0: {tap: 0, shifted: ")"}
+
+    # modifiers
     LCTRL: $$mdi:apple-keyboard-control$$
     LALT: $$mdi:apple-keyboard-option$$
     LSHIFT: $$mdi:apple-keyboard-shift$$
     LCMD: $$mdi:apple-keyboard-command$$
     LEFT_GUI: $$mdi:apple-keyboard-command$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    RALT: $$mdi:apple-keyboard-option$$
+    RSHIFT: $$mdi:apple-keyboard-shift$$
+    RCMD: $$mdi:apple-keyboard-command$$
+
     # Common keys
-    BACKSPACE: {tap: $$mdi:backspace$$}
-    DELETE: {tap: $$mdi:backspace-reverse-outline$$}
     ENTER: {tap: $$mdi:keyboard-return$$}
+    RET: {tap: $$mdi:keyboard-return$$}
     ESC: $$mdi:keyboard-esc$$
     TAB: $$mdi:keyboard-tab$$
     SPACE: $$mdi:keyboard-space$$
-    # Media and System
+    BACKSPACE: {tap: $$mdi:backspace$$}
+    BSPC: {tap: $$mdi:backspace$$}
+    DELETE: {tap: $$mdi:backspace-reverse-outline$$}
+    DEL: $$mdi:backspace-reverse-outline$$
+    CAPS: $$mdi:apple-keyboard-caps$$
+
+    # Media & Arrows
     C_VOL_UP: $$mdi:volume-high$$
     C_VOL_DN: $$mdi:volume-low$$
     C_MUTE: $$mdi:volume-off$$
@@ -83,3 +170,5 @@ parse_config:
     DOWN: $$mdi:arrow-down-bold$$
     LEFT: $$mdi:arrow-left-bold$$
     RIGHT: $$mdi:arrow-right-bold$$
+    PG_UP: 'PgUp'
+    PG_DN: 'PgDn'
