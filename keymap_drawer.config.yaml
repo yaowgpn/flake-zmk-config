@@ -1,0 +1,85 @@
+draw_config:
+  # === Layout Parameters ===
+  # Do not specify "layout: anywhy_flake" for now; let the tool attempt to infer the shape from the firmware.
+  # If inference fails (resulting in a straight line/grid), we will manually add the JSON definition later.
+  draw_key_sides: true
+  key_w: 60.0
+  key_h: 56.0
+  split_gap: 30.0
+  combo_w: 28.0
+  combo_h: 26.0
+  arc_radius: 6.0
+
+  # === Styling ===
+  svg_extra_style: |
+    /* Font settings */
+    svg.keymap {
+      font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
+      font-size: 12px;
+      font-weight: bold;
+      text-rendering: optimizeLegibility;
+    }
+    /* Highlight color when held */
+    rect.held, rect.combo.held {
+      fill: #ffc;
+    }
+    /* Icon fine-tuning */
+    .sym_sub_text.tap { translate: -5px 2px; font-size: 20px; }
+    .sym_sub_text.shifted { translate: 10px 13px; font-size: 10px; opacity: 1.0; }
+    .toggle.shifted { translate: -10px 12px; }
+    .toggle.hold { translate: 13px -23px; }
+    .tap_dance.tap { translate: -7px 0px; font-size: 12px; }
+
+  # === Icon Sources ===
+  shrink_wide_legends: 6
+  glyph_tap_size: 18
+  glyph_hold_size: 15
+  glyph_shifted_size: 15
+  glyph_urls:
+    tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
+    mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
+    mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
+    material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
+
+parse_config:
+  mark_alternate_layer_activators: true
+  sticky_label: $$mdi:gesture-tap-hold$$
+  trans_legend:
+    tap: $$mdi:transfer$$
+    type: trans
+
+  # === Key Mappings (Convert code to pretty icons) ===
+  raw_binding_map:
+    "&sys_reset": {tap: $$mdi:backup-restore$$}
+    "&bootloader": {tap: $$mdi:progress-download$$}
+    "&bt BT_CLR": {tap: $$mdi:bluetooth-off$$}
+    "&mkp LCLK": {tap: $$mdi:mouse-left-click-outline$$}
+    "&mkp RCLK": {tap: $$mdi:mouse-right-click-outline$$}
+    # Mac-style modifier keys
+    "&hm LEFT_GUI A": {tap: 'A', shifted: $$mdi:apple-keyboard-command$$}
+    "&hm LEFT_ALT S": {tap: 'S', shifted: $$mdi:apple-keyboard-option$$}
+    "&hm LEFT_CONTROL D": {tap: 'D', shifted: $$mdi:apple-keyboard-control$$}
+    "&hm LEFT_SHIFT F": {tap: 'F', shifted: $$mdi:apple-keyboard-shift$$}
+
+  zmk_keycode_map:
+    # Modifier key icons
+    LCTRL: $$mdi:apple-keyboard-control$$
+    LALT: $$mdi:apple-keyboard-option$$
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    LCMD: $$mdi:apple-keyboard-command$$
+    LEFT_GUI: $$mdi:apple-keyboard-command$$
+    # Common keys
+    BACKSPACE: {tap: $$mdi:backspace$$}
+    DELETE: {tap: $$mdi:backspace-reverse-outline$$}
+    ENTER: {tap: $$mdi:keyboard-return$$}
+    ESC: $$mdi:keyboard-esc$$
+    TAB: $$mdi:keyboard-tab$$
+    SPACE: $$mdi:keyboard-space$$
+    # Media and System
+    C_VOL_UP: $$mdi:volume-high$$
+    C_VOL_DN: $$mdi:volume-low$$
+    C_MUTE: $$mdi:volume-off$$
+    UP: $$mdi:arrow-up-bold$$
+    DOWN: $$mdi:arrow-down-bold$$
+    LEFT: $$mdi:arrow-left-bold$$
+    RIGHT: $$mdi:arrow-right-bold$$
