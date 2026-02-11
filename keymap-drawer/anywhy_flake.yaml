@@ -52,7 +52,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - 1 Nav
+  - {t: '$$mdi:keyboard-return$$', h: 1 Nav}
   - $$mdi:backspace$$
   - $$mdi:keyboard-space$$
   - 2 Num/Punct
