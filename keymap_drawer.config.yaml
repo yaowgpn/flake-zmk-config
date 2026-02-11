@@ -71,8 +71,8 @@ parse_config:
     # Mouse Button
     "&mkp LCLK": {tap: $$mdi:mouse-left-click-outline$$}
     "&mkp RCLK": {tap: $$mdi:mouse-right-click-outline$$}
-    "&mkp MB4": { tap: $$mdi:mouse$$ < }
-    "&mkp MB5": { tap: $$mdi:mouse$$ > }
+    "&mkp MB4": { tap: $$mdi:mouse$$, shifted: $$mdi:chevron-left$$ }
+    "&mkp MB5": { tap: $$mdi:mouse$$, shifted: $$mdi:chevron-right$$ }
 
     # Mac-style modifier keys
     "&hm LEFT_GUI A": {tap: 'A', shifted: $$mdi:apple-keyboard-command$$}
