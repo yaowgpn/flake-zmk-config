@@ -36,7 +36,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - APOS
+  - {t: '''', s: '"'}
   - {t: '[', s: '{'}
   - Z
   - X
@@ -49,14 +49,14 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: ']', s: '}'}
-  - LGUI
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-space$$
   - num
   - fn
   - LSHFT
-  - LGUI
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   num:
@@ -85,7 +85,7 @@ layers:
   - {t: '-', s: _}
   - ''
   - ''
-  - LGUI
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - LSHFT
@@ -141,7 +141,7 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
-  - BRI UP
+  - $$mdi:brightness-7$$
   - ''
   - ''
   - F10
@@ -153,7 +153,7 @@ layers:
   - RSHFT
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - RGUI
+  - $$mdi:apple-keyboard-command$$
   - ''
   - ''
   - F11
@@ -162,10 +162,10 @@ layers:
   - F3
   - Studio
   - {h: '1', s: '&bt_clr_0'}
-  - PP
-  - PREV
-  - NEXT
-  - BRI DN
+  - $$mdi:play-pause$$
+  - $$mdi:skip-previous$$
+  - $$mdi:skip-next$$
+  - $$mdi:brightness-5$$
   - ''
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
