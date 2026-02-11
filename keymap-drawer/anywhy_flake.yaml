@@ -77,7 +77,7 @@ layers:
   - {t: '$$mdi:arrow-left-bold$$', s: '$$mdi:apple-keyboard-command$$'}
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:arrow-right-bold$$', s: '$$mdi:apple-keyboard-command$$'}
-  - '&mkp MB5'
+  - $$mdi:mouse$$ >
   - PgUp
   - {t: '$$mdi:arrow-left-bold$$', s: '$$mdi:apple-keyboard-command$$'}
   - $$mdi:arrow-up-bold$$
@@ -89,7 +89,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - '&mkp MB4'
+  - $$mdi:mouse$$ <
   - PgDn
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -136,7 +136,7 @@ layers:
   - {t: '$$mdi:arrow-left-bold$$', s: '$$mdi:apple-keyboard-command$$'}
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:arrow-right-bold$$', s: '$$mdi:apple-keyboard-command$$'}
-  - '&mkp MB5'
+  - $$mdi:mouse$$ >
   - PgUp
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -148,7 +148,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - '&mkp MB4'
+  - $$mdi:mouse$$ <
   - PgDn
   - {t: '4', s: $}
   - {t: '5', s: '%'}
