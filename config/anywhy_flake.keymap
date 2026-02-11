@@ -121,6 +121,7 @@
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V   &kp B            &kp N      &kp M   &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT
            &kp LCTRL  &kp LALT  &kp LGUI  &mo 1   &kp BACKSPACE    &kp SPACE  &mo 2   &kp LGUI   &kp LALT  &kp LCTRL
             >;
+            display-name = "0 base";
         };
 
         nav {
@@ -131,6 +132,7 @@
 &trans     &kp C_NEXT  &kp LA(LEFT_ARROW)  &kp UP          &kp LA(RIGHT)        &none       &none          &kp LA(LEFT_ARROW)  &none           &kp LA(RIGHT_ARROW)  &kp C_VOLUME_DOWN  &trans
            &trans      &trans              &trans          &trans               &none       &none          &mo 3               &trans          &trans               &trans
             >;
+            display-name = "1 Nav";
         };
 
         num_punc {
@@ -141,6 +143,7 @@
 &trans     &trans  &none   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none       &kp N0         &kp N1  &kp N2  &kp N3   &kp FSLH      &trans
            &trans  &trans  &trans                &mo 3                  &none       &none          &trans  &kp N0  &kp DOT  &kp EQUAL
             >;
+            display-name = "2 Num/Punct";
         };
 
         sys_adj {
@@ -151,6 +154,7 @@
 &trans  &none         &none         &none         &none         &studio_unlock    &bt0    &none              &none       &none            &kp C_BRI_DN  &trans
         &trans        &trans        &trans        &trans        &trans            &trans  &trans             &trans      &trans           &trans
             >;
+            display-name = "3 Sys/Adj";
         };
     };
 };
