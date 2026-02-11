@@ -97,8 +97,8 @@ parse_config:
     "&bt BT_PRV": {tap: $$mdi:bluetooth-transfer$$ -, hold: $$mdi:arrow-up-bold$$}
 
     # Comb w/ modifiers
-    "&kp LA(LEFT)": {tap: $$mdi:apple-keyboard-option$$ $$mdi:arrow-left-bold$$}
-    "&kp LA(RIGHT)": {tap: $$mdi:apple-keyboard-option$$ $$mdi:arrow-right-bold$$}
+    "&kp LA(LEFT)": {tap: $$mdi:arrow-left-bold$$, shifted: $$mdi:apple-keyboard-option$$}
+    "&kp LA(RIGHT)": {tap: $$mdi:arrow-right-bold$$, shifted: $$mdi:apple-keyboard-option$$}
     "&kp LG(LEFT)": {tap: $$mdi:arrow-left-bold$$, shifted: $$mdi:apple-keyboard-command$$}
     "&kp LG(RIGHT)": {tap: $$mdi:arrow-right-bold$$, shifted: $$mdi:apple-keyboard-command$$}
 
