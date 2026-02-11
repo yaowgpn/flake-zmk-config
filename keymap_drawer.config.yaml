@@ -68,8 +68,12 @@ parse_config:
     "&lt 2 SPACE": {tap: $$mdi:keyboard-space$$, hold: $$mdi:symbol$$}
     "&lt 3 ENTER": {tap: $$mdi:keyboard-return$$, hold: $$mdi:numeric$$}
 
+    # Mouse Button
     "&mkp LCLK": {tap: $$mdi:mouse-left-click-outline$$}
     "&mkp RCLK": {tap: $$mdi:mouse-right-click-outline$$}
+    "&mkp MB4": { tap: $$mdi:mouse$$ < }
+    "&mkp MB5": { tap: $$mdi:mouse$$ > }
+
     # Mac-style modifier keys
     "&hm LEFT_GUI A": {tap: 'A', shifted: $$mdi:apple-keyboard-command$$}
     "&hm LEFT_ALT S": {tap: 'S', shifted: $$mdi:apple-keyboard-option$$}
