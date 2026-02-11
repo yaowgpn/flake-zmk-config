@@ -90,6 +90,10 @@ parse_config:
     "&studio_unlock": {tap: "Studio"}
 
     # Bluetooth
+    "&out OUT_TOG":
+      shifted: $$mdi:usb$$
+      tap: $$mdi:toggle-switch$$
+      hold: $$mdi:bluetooth$$
     "&bt BT_SEL 0": {tap: "", hold: 1, shifted: $$mdi:bluetooth-connect$$}
     "&bt BT_SEL 1": {tap: "", hold: 2, shifted: $$mdi:bluetooth-connect$$}
     "&bt BT_SEL 2": {tap: "", hold: 3, shifted: $$mdi:bluetooth-connect$$}
@@ -97,8 +101,14 @@ parse_config:
     "&bt BT_SEL 4": {tap: "", hold: 5, shifted: $$mdi:bluetooth-connect$$}
     "&bt BT_CLR": {tap: $$mdi:bluetooth-off$$}
     "&bt BT_CLR_ALL": {tap: $$mdi:bluetooth-off$$ ALL}
-    "&bt BT_NXT": {tap: $$mdi:bluetooth-transfer$$ +, hold: $$mdi:arrow-down-bold$$}
-    "&bt BT_PRV": {tap: $$mdi:bluetooth-transfer$$ -, hold: $$mdi:arrow-up-bold$$}
+    "&bt BT_PRV":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: $$mdi:arrow-up-bold$$
+    "&bt BT_NXT":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: $$mdi:arrow-down-bold$$
 
     # Comb w/ modifiers
     "&kp LA(LEFT)": {tap: $$mdi:arrow-left-bold$$, shifted: $$mdi:apple-keyboard-option$$}
@@ -127,11 +137,14 @@ parse_config:
     AMPS: "&"
     AMPERSAND: "&"
     STAR: "*"
+    ASTRK: "*"
     ASTERISK: "*"
     LPAR: (
     LEFT_PAREN: (
+    LEFT_PARENTHESIS: (
     RPAR: )
     RIGHT_PAREN: )
+    RIGHT_PARENTHESIS: )
     EQUAL: {tap: "=", shifted: "+"}
     PLUS: +
     MINUS: {tap: "-", shifted: "_"}
