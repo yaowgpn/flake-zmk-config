@@ -74,46 +74,46 @@ layers:
   - F11
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:skip-previous$$
-  - Gui+LEFT ARROW
-  - UP ARROW
-  - Gui+RIGHT ARROW
+  - Gui+$$mdi:arrow-left-bold$$
+  - $$mdi:arrow-up-bold$$
+  - Gui+$$mdi:arrow-right-bold$$
   - '&mkp MB5'
-  - PAGE UP
-  - Gui+LEFT ARROW
-  - UP ARROW
-  - Gui+RIGHT ARROW
-  - VOLUME UP
+  - PgUp
+  - Gui+$$mdi:arrow-left-bold$$
+  - $$mdi:arrow-up-bold$$
+  - Gui+$$mdi:arrow-right-bold$$
+  - $$mdi:volume-high$$
   - F12
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:play-pause$$
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - '&mkp MB4'
-  - PAGE DOWN
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
+  - PgDn
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - $$mdi:volume-off$$
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:skip-next$$
-  - Alt+LEFT ARROW
+  - Alt+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:arrow-right-bold$$', s: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Alt+$$mdi:arrow-left-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Alt+$$mdi:arrow-right-bold$$
-  - ''
-  - ''
-  - Alt+LEFT ARROW
-  - ''
-  - Alt+RIGHT ARROW
-  - VOLUME DOWN
+  - $$mdi:volume-low$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - ''
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -133,46 +133,46 @@ layers:
   - F11
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:skip-previous$$
-  - Gui+LEFT ARROW
-  - UP ARROW
-  - Gui+RIGHT ARROW
+  - Gui+$$mdi:arrow-left-bold$$
+  - $$mdi:arrow-up-bold$$
+  - Gui+$$mdi:arrow-right-bold$$
   - '&mkp MB5'
-  - PAGE UP
+  - PgUp
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - VOLUME UP
+  - $$mdi:volume-high$$
   - F12
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:play-pause$$
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - '&mkp MB4'
-  - PAGE DOWN
+  - PgDn
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - $$mdi:volume-off$$
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:skip-next$$
-  - Alt+LEFT ARROW
+  - Alt+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
-  - Alt+$$mdi:arrow-right-bold$$
-  - ''
-  - ''
+  - {t: '$$mdi:arrow-right-bold$$', s: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - VOLUME DOWN
+  - $$mdi:volume-low$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - ''
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
