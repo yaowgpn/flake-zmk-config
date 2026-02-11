@@ -98,9 +98,13 @@ parse_config:
 
     # Comb w/ modifiers
     "&kp LA(LEFT)": {tap: $$mdi:arrow-left-bold$$, shifted: $$mdi:apple-keyboard-option$$}
+    "&kp LA(LEFT_ARROW)": {tap: $$mdi:arrow-left-bold$$, shifted: $$mdi:apple-keyboard-option$$}
     "&kp LA(RIGHT)": {tap: $$mdi:arrow-right-bold$$, shifted: $$mdi:apple-keyboard-option$$}
+    "&kp LA(RIGHT_ARROW)": {tap: $$mdi:arrow-right-bold$$, shifted: $$mdi:apple-keyboard-option$$}
     "&kp LG(LEFT)": {tap: $$mdi:arrow-left-bold$$, shifted: $$mdi:apple-keyboard-command$$}
+    "&kp LG(LEFT_ARROW)": {tap: $$mdi:arrow-left-bold$$, shifted: $$mdi:apple-keyboard-command$$}
     "&kp LG(RIGHT)": {tap: $$mdi:arrow-right-bold$$, shifted: $$mdi:apple-keyboard-command$$}
+    "&kp LG(RIGHT_ARROW)": {tap: $$mdi:arrow-right-bold$$, shifted: $$mdi:apple-keyboard-command$$}
 
   # === Keycode Mappings (Updated) ===
   zmk_keycode_map:
