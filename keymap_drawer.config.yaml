@@ -87,7 +87,8 @@ parse_config:
     # Reset
     "&sys_reset": {type: bootloader, tap: $$mdi:backup-restore$$}
     "&bootloader": {tap: $$mdi:progress-download$$}
-    "&studio_unlock": {tap: "Studio"}
+    "&soft_off": { tap: $$mdi:power-sleep$$ }
+    "&studio_unlock": { tap: $$mdi:lock-open-variant$$, shifted: "Studio" }
 
     # Bluetooth
     "&out OUT_TOG":
