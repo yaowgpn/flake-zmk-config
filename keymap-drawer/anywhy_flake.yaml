@@ -146,8 +146,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - LEFT PARENTHESIS
-  - RIGHT PARENTHESIS
+  - (
+  - )
   - {t: '$$mdi:mouse$$', s: '$$mdi:chevron-left$$'}
   - PgDn
   - {t: '4', s: $}
