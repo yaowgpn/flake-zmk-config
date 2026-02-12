@@ -97,11 +97,11 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:skip-next$$
-  - {t: '$$mdi:arrow-left-bold$$', s: '$$mdi:apple-keyboard-option$$'}
-  - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:arrow-right-bold$$', s: '$$mdi:apple-keyboard-option$$'}
+  - {t: '-', s: _}
+  - {t: '=', s: +}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:arrow-left-bold$$', s: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:arrow-right-bold$$', s: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:arrow-left-bold$$', s: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
